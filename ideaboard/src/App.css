@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  background: #fbfbfb;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.ideasManagement {
+  margin: 20px 0;
+}
+
+.ideasList, .completedIdeas{
+  height: 260px;
+  border: 1px solid #e9e9e9;
+  margin: 20px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.tile {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  background: lightyellow;
+  float: left;
+  font-size: 11px;
+  text-align: left;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 1px #aaa;
+  border-radius: 2px;
+}
+
+.newIdeaButton {
+  background: lightgrey;
+  color: white;
+  border: 1px solid black;
+  box-shadow: 1px 1px lightgrey;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+.input {
+  border: 0;
+  background: none;
+  outline: none;
+  margin-top: 10px;
+  width: 140px;
+  font-size: 11px;
+}
+
+.input:focus {
+  border: 1px solid grey;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+  font-size: 11px;
+}
+
+.deleteIdea {
+  visibility: hidden;
+  float: right;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: red;
+}
+
+.tile:hover .deleteIdea {
+  visibility: visible;
+}
+
+.completedIdeas .tile {
+  border: 1px solid #e9e9e9;
+  background: rgba(66, 244, 110, 0.1);
+}
